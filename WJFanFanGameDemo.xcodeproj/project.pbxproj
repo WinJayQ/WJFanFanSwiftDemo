@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C1D66021BB12E6700E6D716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D66011BB12E6700E6D716 /* AppDelegate.swift */; };
+		9C1D66041BB12E6700E6D716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D66031BB12E6700E6D716 /* ViewController.swift */; };
+		9C1D66071BB12E6700E6D716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D66051BB12E6700E6D716 /* Main.storyboard */; };
+		9C1D66091BB12E6700E6D716 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D66081BB12E6700E6D716 /* Images.xcassets */; };
+		9C1D660C1BB12E6700E6D716 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D660A1BB12E6700E6D716 /* LaunchScreen.xib */; };
+		9C1D66181BB12E6700E6D716 /* WJFanFanGameDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D66171BB12E6700E6D716 /* WJFanFanGameDemoTests.swift */; };
+		9C1D66241BB1306B00E6D716 /* FanFanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D66231BB1306B00E6D716 /* FanFanViewController.swift */; };
+		9C1D66261BB137A000E6D716 /* FFResource in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D66251BB137A000E6D716 /* FFResource */; };
+		9C1D66281BB13CBD00E6D716 /* MyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D66271BB13CBD00E6D716 /* MyImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C1D66121BB12E6700E6D716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C1D65F41BB12E6700E6D716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C1D65FB1BB12E6700E6D716;
+			remoteInfo = WJFanFanGameDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C1D65FC1BB12E6700E6D716 /* WJFanFanGameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJFanFanGameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1D66001BB12E6700E6D716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1D66011BB12E6700E6D716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C1D66031BB12E6700E6D716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C1D66061BB12E6700E6D716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C1D66081BB12E6700E6D716 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C1D660B1BB12E6700E6D716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9C1D66111BB12E6700E6D716 /* WJFanFanGameDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJFanFanGameDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1D66161BB12E6700E6D716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1D66171BB12E6700E6D716 /* WJFanFanGameDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WJFanFanGameDemoTests.swift; sourceTree = "<group>"; };
+		9C1D66231BB1306B00E6D716 /* FanFanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanFanViewController.swift; sourceTree = "<group>"; };
+		9C1D66251BB137A000E6D716 /* FFResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FFResource; sourceTree = "<group>"; };
+		9C1D66271BB13CBD00E6D716 /* MyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C1D65F91BB12E6700E6D716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1D660E1BB12E6700E6D716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C1D65F31BB12E6700E6D716 = {
+			isa = PBXGroup;
+			children = (
+				9C1D65FE1BB12E6700E6D716 /* WJFanFanGameDemo */,
+				9C1D66141BB12E6700E6D716 /* WJFanFanGameDemoTests */,
+				9C1D65FD1BB12E6700E6D716 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C1D65FD1BB12E6700E6D716 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D65FC1BB12E6700E6D716 /* WJFanFanGameDemo.app */,
+				9C1D66111BB12E6700E6D716 /* WJFanFanGameDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C1D65FE1BB12E6700E6D716 /* WJFanFanGameDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D66251BB137A000E6D716 /* FFResource */,
+				9C1D66011BB12E6700E6D716 /* AppDelegate.swift */,
+				9C1D66031BB12E6700E6D716 /* ViewController.swift */,
+				9C1D66271BB13CBD00E6D716 /* MyImageView.swift */,
+				9C1D66231BB1306B00E6D716 /* FanFanViewController.swift */,
+				9C1D66051BB12E6700E6D716 /* Main.storyboard */,
+				9C1D66081BB12E6700E6D716 /* Images.xcassets */,
+				9C1D660A1BB12E6700E6D716 /* LaunchScreen.xib */,
+				9C1D65FF1BB12E6700E6D716 /* Supporting Files */,
+			);
+			path = WJFanFanGameDemo;
+			sourceTree = "<group>";
+		};
+		9C1D65FF1BB12E6700E6D716 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D66001BB12E6700E6D716 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C1D66141BB12E6700E6D716 /* WJFanFanGameDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D66171BB12E6700E6D716 /* WJFanFanGameDemoTests.swift */,
+				9C1D66151BB12E6700E6D716 /* Supporting Files */,
+			);
+			path = WJFanFanGameDemoTests;
+			sourceTree = "<group>";
+		};
+		9C1D66151BB12E6700E6D716 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D66161BB12E6700E6D716 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C1D65FB1BB12E6700E6D716 /* WJFanFanGameDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1D661B1BB12E6700E6D716 /* Build configuration list for PBXNativeTarget "WJFanFanGameDemo" */;
+			buildPhases = (
+				9C1D65F81BB12E6700E6D716 /* Sources */,
+				9C1D65F91BB12E6700E6D716 /* Frameworks */,
+				9C1D65FA1BB12E6700E6D716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WJFanFanGameDemo;
+			productName = WJFanFanGameDemo;
+			productReference = 9C1D65FC1BB12E6700E6D716 /* WJFanFanGameDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C1D66101BB12E6700E6D716 /* WJFanFanGameDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1D661E1BB12E6700E6D716 /* Build configuration list for PBXNativeTarget "WJFanFanGameDemoTests" */;
+			buildPhases = (
+				9C1D660D1BB12E6700E6D716 /* Sources */,
+				9C1D660E1BB12E6700E6D716 /* Frameworks */,
+				9C1D660F1BB12E6700E6D716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C1D66131BB12E6700E6D716 /* PBXTargetDependency */,
+			);
+			name = WJFanFanGameDemoTests;
+			productName = WJFanFanGameDemoTests;
+			productReference = 9C1D66111BB12E6700E6D716 /* WJFanFanGameDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C1D65F41BB12E6700E6D716 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = WJ;
+				TargetAttributes = {
+					9C1D65FB1BB12E6700E6D716 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					9C1D66101BB12E6700E6D716 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 9C1D65FB1BB12E6700E6D716;
+					};
+				};
+			};
+			buildConfigurationList = 9C1D65F71BB12E6700E6D716 /* Build configuration list for PBXProject "WJFanFanGameDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C1D65F31BB12E6700E6D716;
+			productRefGroup = 9C1D65FD1BB12E6700E6D716 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C1D65FB1BB12E6700E6D716 /* WJFanFanGameDemo */,
+				9C1D66101BB12E6700E6D716 /* WJFanFanGameDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C1D65FA1BB12E6700E6D716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1D66071BB12E6700E6D716 /* Main.storyboard in Resources */,
+				9C1D660C1BB12E6700E6D716 /* LaunchScreen.xib in Resources */,
+				9C1D66261BB137A000E6D716 /* FFResource in Resources */,
+				9C1D66091BB12E6700E6D716 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1D660F1BB12E6700E6D716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C1D65F81BB12E6700E6D716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1D66281BB13CBD00E6D716 /* MyImageView.swift in Sources */,
+				9C1D66041BB12E6700E6D716 /* ViewController.swift in Sources */,
+				9C1D66241BB1306B00E6D716 /* FanFanViewController.swift in Sources */,
+				9C1D66021BB12E6700E6D716 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1D660D1BB12E6700E6D716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1D66181BB12E6700E6D716 /* WJFanFanGameDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C1D66131BB12E6700E6D716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C1D65FB1BB12E6700E6D716 /* WJFanFanGameDemo */;
+			targetProxy = 9C1D66121BB12E6700E6D716 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C1D66051BB12E6700E6D716 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C1D66061BB12E6700E6D716 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C1D660A1BB12E6700E6D716 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C1D660B1BB12E6700E6D716 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C1D66191BB12E6700E6D716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C1D661A1BB12E6700E6D716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C1D661C1BB12E6700E6D716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WJFanFanGameDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C1D661D1BB12E6700E6D716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WJFanFanGameDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9C1D661F1BB12E6700E6D716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WJFanFanGameDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WJFanFanGameDemo.app/WJFanFanGameDemo";
+			};
+			name = Debug;
+		};
+		9C1D66201BB12E6700E6D716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WJFanFanGameDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WJFanFanGameDemo.app/WJFanFanGameDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C1D65F71BB12E6700E6D716 /* Build configuration list for PBXProject "WJFanFanGameDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1D66191BB12E6700E6D716 /* Debug */,
+				9C1D661A1BB12E6700E6D716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C1D661B1BB12E6700E6D716 /* Build configuration list for PBXNativeTarget "WJFanFanGameDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1D661C1BB12E6700E6D716 /* Debug */,
+				9C1D661D1BB12E6700E6D716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9C1D661E1BB12E6700E6D716 /* Build configuration list for PBXNativeTarget "WJFanFanGameDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1D661F1BB12E6700E6D716 /* Debug */,
+				9C1D66201BB12E6700E6D716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C1D65F41BB12E6700E6D716 /* Project object */;
+}
