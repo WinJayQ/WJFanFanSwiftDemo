@@ -75,12 +75,12 @@ class FanFanViewController: UIViewController {
     func loadMusicByName(name: String) -> AVAudioPlayer {
         let path = NSBundle.mainBundle().pathForResource(name,ofType: "mp3")
         let url = NSURL(fileURLWithPath: path!)
-        NSLog("url = %@", url!)
-        var player = AVAudioPlayer(contentsOfURL: url,error: nil)
-        NSLog("player = %@", player)
-        player.prepareToPlay()
-        player.volume = 0.9
-        return player
+        NSLog("url = %@", url)
+        let player = try? AVAudioPlayer(contentsOfURL: url)
+        NSLog("player = %@", player!)
+        player!.prepareToPlay()
+        player!.volume = 0.9
+        return player!
     }
     
     func prepareTimeCount() {
@@ -88,7 +88,7 @@ class FanFanViewController: UIViewController {
     }
     
     func timeCount() {
-        var timeCount: Int = self.timeCountLabel.text!.toInt()!
+        var timeCount: Int = Int(self.timeCountLabel.text!)!
         if timeCount <= 0 {
             self.timer.invalidate()
             self.gameOver()
@@ -113,40 +113,40 @@ class FanFanViewController: UIViewController {
     }
     
     func prepareBird() {
-        var images: NSMutableArray = NSMutableArray()
+        let images: NSMutableArray = NSMutableArray()
         for i in 1...7 {
-            var str = "bird\(i).png"
-            var image = UIImage(named: str)
+            let str = "bird\(i).png"
+            let image = UIImage(named: str)
             images.addObject(image!)
         }
-        self.birdView.animationImages = images as [AnyObject]
+        self.birdView.animationImages = images as NSArray as? [UIImage]
         self.birdView.animationDuration = 1.2
     }
     
     func prepareWinView() {
-        var images: NSMutableArray! = NSMutableArray()
+        let images: NSMutableArray! = NSMutableArray()
         for i in 1...12 {
-            var image = UIImage(named: "congratulation\(i).png")
+            let image = UIImage(named: "congratulation\(i).png")
             images.addObject(image!)
         }
-        self.congratulationView.animationImages = images as [AnyObject]
+        self.congratulationView.animationImages = images as NSArray as? [UIImage]
         self.congratulationView.animationDuration = 3
         self.congratulationView.startAnimating()
         self.view.addSubview(self.congratulationView)
     }
     
     func loadFruits() {
-        var tags = randomTags()
-        var images = randomImages()
+        let tags = randomTags()
+        let images = randomImages()
         var index = 0
         for i in 0...9
         {
             //取出一张图片
-            var image: UIImage = images[i] as! UIImage
+            let image: UIImage = images[i] as! UIImage
             //获取两个问号
-            var my1: MyImageView = self.view.viewWithTag(tags[index] as! Int) as! MyImageView
+            let my1: MyImageView = self.view.viewWithTag(tags[index] as! Int) as! MyImageView
             index++
-            var my2: MyImageView = self.view.viewWithTag(tags[index] as! Int) as! MyImageView
+            let my2: MyImageView = self.view.viewWithTag(tags[index] as! Int) as! MyImageView
             index++
             
             //设置相同的图片和标记
@@ -159,11 +159,11 @@ class FanFanViewController: UIViewController {
     }
     
     func randomTags() -> NSArray {
-        var mArr: NSMutableArray = NSMutableArray()
-        var count = 0
+        let mArr: NSMutableArray = NSMutableArray()
+       // var count = 0
         while(mArr.count < 20) {
-            var tag = arc4random()%20 + 100
-            var t = NSNumber(unsignedInt: tag)
+            let tag = arc4random()%20 + 100
+            let t = NSNumber(unsignedInt: tag)
             if(!mArr.containsObject(t)) {
                 mArr.addObject(t)
             }
@@ -172,10 +172,10 @@ class FanFanViewController: UIViewController {
     }
     
     func randomImages() -> NSArray {
-        var images: NSMutableArray = NSMutableArray()
+        let images: NSMutableArray = NSMutableArray()
         while(images.count < 10) {
-            var i = arc4random()%18 + 1
-            var image: UIImage = UIImage(named: "fruit\(i).png")!
+            let i = arc4random()%18 + 1
+            let image: UIImage = UIImage(named: "fruit\(i).png")!
             if(!images.containsObject(image)) {
                 images.addObject(image)
             }
@@ -185,14 +185,14 @@ class FanFanViewController: UIViewController {
     
     func turnAll2Left() {
         for i in 100...119 {
-            var myI = self.view.viewWithTag(i) as! MyImageView
+            let myI = self.view.viewWithTag(i) as! MyImageView
             myI.turn2Left()
         }
     }
     
     func turnAll2Right() {
         for i in 100...119 {
-            var myI = self.view.viewWithTag(i) as! MyImageView
+            let myI = self.view.viewWithTag(i) as! MyImageView
             myI.turn2Right()
         }
     }
@@ -210,12 +210,13 @@ class FanFanViewController: UIViewController {
         
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
-        var touch :UITouch =  touches.first as! UITouch
-        if(touch.view.isKindOfClass(MyImageView.self))
+       // let touch :UITouch =  touches.first as! UITouch
+        let touch: UITouch = touches.first!
+        if(touch.view!.isKindOfClass(MyImageView.self))
         {
-            var currentTouchView = touch.view as! MyImageView
+            let currentTouchView = touch.view as! MyImageView
             currentTouchView.turn2Left()
             self.clickPlayer.play()
             if (self.tempImageView == nil)
